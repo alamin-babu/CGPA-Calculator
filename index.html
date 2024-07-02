@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2620/2620441.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>CGPA Calculator</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="c.js" />
+    <link rel="stylesheet" href="s.css" />
+  </head>
+  <body>
+    <!--  -->
+    <!--  -->
+    <h1>CGPA Calculator</h1>
+    <div id="numOfCourses">
+      <label id="lblNumCourses" for="numCourses">Number Of Courses</label>
+      <div>
+        <input
+          id="numCourses"
+          type="text"
+          name="numCourses"
+          placeholder="  Enter Number of Courses"
+          oninput="numOfCourses()"
+        />
+      </div>
+    </div>
+    <!-- Fields Updated here through JavaScript Based on Input -->
+    <div id="fields"></div>
+    <div class="ok">
+      <input id="button" type="submit" onclick="calculateCGPA()" />
+    </div>
+    <div><h2>GPA:</h2></div>
+    <div class="footer-bottom">
+      <!-- <p>Copyright ©2022, All Rights Reserved</p> -->
+      <p>©2022 Alamin. All rights reserved.</p>
+    </div>
+  </body>
+</html>
